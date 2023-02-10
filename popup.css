@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: block;
+    width: 300px;
+    height: 500px;
+    background-color: skyblue;
+}
+.buttons {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;   
+}
+button {
+    background: white;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: rgb(128, 195, 222);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.blocks {
+    display: flex;
+    width: 100%;
+    height: 82%;
+}
+.divblock {
+    width: 100%;
+    height: auto;
+    background: green;
+    display: block;
+}
+.divtiming {
+    width: 100%;
+    height: auto;
+    background: #DE0000;
+    display: none;
+}
+.divother {
+    width: 100%;
+    height: auto;
+    background: blue;
+    display: none;
+}
