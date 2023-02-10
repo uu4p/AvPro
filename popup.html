@@ -8,22 +8,37 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="container">  
+    <div class="container">
+        <div class="top">
+            AvPro
+        </div>
         <div class="blocks">
             <div class="divblock" id="divblock">
-
+            
             </div>
             <div class="divtiming" id="divtiming">
-                <img src="https://media.discordapp.net/attachments/967459067079589958/1073219199247327362/220px-Flag_of_Germany_281935E2809319452C_square_version29.png" width="100%" height="100%">
+                <table class="tableTime">
+                    <tr>
+                        <td>00</td>
+                        <td>:</td>
+                        <td>00</td>
+                        <td>:</td>
+                        <td>00</td>
+                    </tr>
+                </table>
+                <form class="walangLabel" action="popup.html">
+                    <label for="hours">Hours</label>
+                    <input type="number" name="number" value="0" min="0" max="24">
+                </form>
             </div>
             <div class="divother" id="divother">
-
+                <img src="https://media.discordapp.net/attachments/967459067079589958/1073219199247327362/220px-Flag_of_Germany_281935E2809319452C_square_version29.png" width="100%" height="100%">
             </div>
         </div>
         <div class="buttons">
-            <button type="button" id="blocking">Block</button>
-            <button type="button" id="timing">HEIL</button>
-            <button type="button" id="otherThings">Others</button>
+            <button type="button" id="blocking">MEIN</button>
+            <button type="button" id="timing">KAMPF</button>
+            <button type="button" id="otherThings">HEIL</button>
         </div>
     </div>
     <script src="buttonChange.js"></script>
