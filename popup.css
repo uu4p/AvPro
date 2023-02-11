@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Something that stays in the popup */
 .container {
     display: block;
     width: 300px;
@@ -26,7 +28,7 @@
     align-items: center;
     justify-content: center;   
 }
-button {
+.blwBtn {
     background: white;
     width: 90px;
     height: 50px;
@@ -38,7 +40,7 @@ button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: background 0.2s;
 }
-button:hover {
+.blwBtn:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 .blocks {
@@ -46,22 +48,20 @@ button:hover {
     width: 100%;
     height: 73%;
 }
+
+/* This is what contains in the block */
 .divblock {
     width: 100%;
     height: auto;
     background: green;
     display: block;
 }
+
+/* This is what contains in the timer */
 .divtiming {
     width: 100%;
     height: auto;
-    background: #DE0000;
-    display: none;
-}
-.divother {
-    width: 100%;
-    height: auto;
-    background: blue;
+    background: lightslategray;
     display: none;
 }
 .tableTime {
@@ -73,22 +73,60 @@ button:hover {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .walangLabel {
-    background: orange;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: auto;
-    padding: 20px 60px;
-    word-spacing: 20px;
+    padding: 10px 60px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-radius: 5px;
+    justify-content: space-between;
 }
-/* input[type=text], select{
+.timingBtnDiv {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.timingbtn {
+    background: white;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: rgb(128, 195, 222);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background 0.2s;
+}
+.timing:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+input[type=number], select{
+    width: 25%;
+    height: auto;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+/* This is what contains in others */
+.divother {
     width: 100%;
     height: auto;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    
-} */
+    background: blue;
+    display: none;
+}
+
+/* other design things */
+.linebreak {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: darkgrey;
+    height: 2px;
+    flex-basis: 100%;
+}

@@ -4,6 +4,7 @@ const btn_otherThings = document.getElementById("otherThings");
 const divblock = document.getElementById("divblock");
 const divtiming = document.getElementById("divtiming");
 const divother = document.getElementById("divother");
+const startBtn = document.getElementById('start');
 
 btn_blocking.addEventListener('click', () =>{
     divblock.style.display='block';
@@ -20,3 +21,7 @@ btn_otherThings.addEventListener('click', () =>{
     divtiming.style.display='none';
     divother.style.display='block';
 });
+startBtn.addEventListener('click' , () =>{
+    var userHours = document.getElementById('hours').value;
+    alert('you gae ' + userHours);
+})
