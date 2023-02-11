@@ -22,6 +22,6 @@ btn_otherThings.addEventListener('click', () =>{
     divother.style.display='block';
 });
 startBtn.addEventListener('click' , () =>{
-    var userHours = document.getElementById('hours').value;
+    const userHours = document.getElementById('hours').value;
     alert('you gae ' + userHours);
 })
