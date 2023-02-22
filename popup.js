@@ -6,12 +6,18 @@ const divtiming = document.getElementById("divtiming");
 const divother = document.getElementById("divother");
 const startBtn = document.getElementById('start');
 const pauseBtn = document.getElementById('pause');
+const practice = document.getElementById('prac');
 let convertTotal;
 
 btn_blocking.addEventListener('click', () =>{
     divblock.style.display='block';
     divtiming.style.display='none';
     divother.style.display='none';
+});
+
+
+practice.addEventListener('click', () =>{
+    console.log(window.location.href)
 });
 
 btn_timing.addEventListener('click', () =>{
