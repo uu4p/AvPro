@@ -6,12 +6,21 @@ const divtiming = document.getElementById("divtiming");
 const divother = document.getElementById("divother");
 const startBtn = document.getElementById('start');
 const pauseBtn = document.getElementById('pause');
+const practice = document.getElementById('prac');
 let convertTotal;
+let inputs = [];
+
 
 btn_blocking.addEventListener('click', () =>{
     divblock.style.display='block';
     divtiming.style.display='none';
     divother.style.display='none';
+});
+
+
+practice.addEventListener('click', () =>{
+    console.log(window.location.href)
+    blocklist();
 });
 
 btn_timing.addEventListener('click', () =>{
@@ -61,4 +70,17 @@ pauseBtn.addEventListener('click' , () => {
     document.getElementById("pause").disabled = true;
 });
 
+function blocklist(){
+    
+    const userInput = document.getElementById('input').value;
+    //console.log('Website given: ' + inputs[0]);
+    inputs.push(userInput);
+    console.log(`You pushed: ${userInput}`)
+    localStorage.setItem("i", JSON.stringify(inputs));
+    // }
+    // for(i = 0; i < inputs.length; i++) {
+    //         console.log('Website is: ' + inputs[i]);
+    //     localStorage.setItem("i", inputs);
+    // }
+}
 

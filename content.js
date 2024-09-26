@@ -44,7 +44,7 @@ const generateHTML = (pageName) => {
 </div>
   <hr>
   <div id="yesButton">
-      <button class="dButton" type="button"> Button </button>
+      <button class="dButton" type="button"> EXIT </button>
   </div>
    `;
 }
@@ -280,7 +280,7 @@ const generateSTYLES = () => {
       }
     }
     .dButton {
-      height: 200px;
+      height: 150px;
       border: none;
       outline: none;
       background: rgba(0, 0, 0, 0.1);
@@ -334,7 +334,9 @@ function timesOut() {
 
   pressMeDaddy.addEventListener("click", function () {
 
-    alert("You pressed the button");
+    alert("Thank you for using AvPro Browser");
+    
+
 
   });
 
